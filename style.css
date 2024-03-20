@@ -1,0 +1,188 @@
+@import"https://fonts.googleapis.com/css2?family=Satisfy&display=swap";
+
+body {
+    margin: 0;
+    font-family: Satisfy, cursive;
+    background-image: linear-gradient(to right, #ffcc00, #ff6666, #6699ff, #ff3399, #66cc66); /* Linear gradient background image */
+    color: #fff; /* Text color */
+}
+
+code {
+    font-family: Satisfy, cursive;
+}
+
+/* Background color for each Pokemon type */
+.rock {
+    background-image: linear-gradient(to top, #c79081, #dfa579);
+}
+
+.ghost {
+    background-image: linear-gradient(to top, #cfd9df, #e2ebf0);
+}
+
+.electric {
+    background-image: linear-gradient(to right, #f83600, #f9d423);
+}
+
+.bug {
+    background-image: linear-gradient(to top, #e6b980, #eacda3);
+}
+
+.poison {
+    background-image: linear-gradient(to top, #df89b5, #bfd9fe);
+}
+
+.normal {
+    background-image: linear-gradient(-225deg, #e3fdf5, #ffe6fa);
+}
+
+.fairy {
+    background-image: linear-gradient(to top, #ff9a9e, #fecfef 99%, #fecfef);
+}
+
+.fire {
+    background-image: linear-gradient(120deg, #f6d365, #fda085);
+}
+
+.grass {
+    background-image: linear-gradient(120deg, #d4fc79, #96e6a1);
+}
+
+.water {
+    background-image: linear-gradient(120deg, #89f7fe, #66a6ff);
+}
+
+.ground {
+    background-image: linear-gradient(315deg, #772f1a, #f2a65a 74%);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 3rem 1rem;
+}
+
+.container h1 {
+    width: 0ch;
+    color: #2610ec;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: text 4s steps(15) infinite alternate;
+}
+
+@keyframes text {
+    0% {
+        width: 0ch;
+    }
+
+    50% {
+        width: 15ch;
+        color: #da3705;
+    }
+}
+
+.container .pokemonBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .pokemonDiv {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem .2rem;
+    margin: .3rem;
+    border: 1px solid #efefef;
+    border-radius: 2rem;
+    min-width: 160px;
+    text-align: center;
+    box-shadow: 0 3px 15px #00000017;
+}
+
+h3 {
+    margin-bottom: .2rem;
+}
+
+.card .number {
+    border-radius: 1rem;
+    padding: .2rem .4rem;
+    background-color: #ffffff4d;
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+}
+
+.card small {
+    text-transform: capitalize;
+}
+
+.card .detail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card .detail button {
+    color: #161616;
+    padding: .5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: .2rem;
+    cursor: pointer;
+    background-color: #0000002f;
+}
+
+.desc {
+    display: none;
+}
+
+.loadMore {
+    background-color: #76daff;
+    background-image: linear-gradient(315deg, #76daff, #fcd000 74%);
+    border-radius: 6px;
+    border: 1px solid #c6c6c6;
+    color: #444;
+    padding: .5rem 1.5rem;
+    min-width: 20%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: red;
+    background-image: linear-gradient(315deg, red, #ffed00 74%);
+}
+
+.pokeinfo {
+    margin: 0 25px;
+    font-family: Satisfy, cursive;
+    background-image: linear-gradient(180deg, #2af598, #009efd);
+}
+
+.pokeinfo:hover {
+    background-image: linear-gradient(-20deg, #ddd6f3, #faaca8 100%, #faaca8);
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+
+
+
+
